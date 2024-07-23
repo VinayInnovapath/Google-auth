@@ -9,17 +9,17 @@ const app = express();
 const PORT = 3000;
 
 // Google OAuth2 client setup
-const CLIENT_ID = '25366325354-gmtk0k3suegfdlnbf1d9j81t1codhr3k.apps.googleusercontent.com';
-const CLIENT_SECRET = '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';
-const REDIRECT_URI = 'http://localhost:3000/oauth2callback';
+const CLIENT_ID = 'Google client id';
+const CLIENT_SECRET = 'Google CLient secret';
+const REDIRECT_URI = 'redirect uri';
 const oauth2Client = new OAuth2Client(CLIENT_ID, CLIENT_SECRET, REDIRECT_URI);
 
 // MySQL database setup
 const dbConfig = {
-  host: '35.232.56.51',
-  user: 'whiteboxqa',
-  password: 'Innovapath1',
-  database: 'social_login'
+  host: '',
+  user: '',
+  password: '',
+  database: ''
 };
 
 async function queryDb(query, params) {
